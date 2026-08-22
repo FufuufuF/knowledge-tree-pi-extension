@@ -1,0 +1,33 @@
+{
+  "name": "byte-mentor-pi-extension",
+  "version": "0.1.0",
+  "description": "Byte Mentor - a cross-session learning-memory Pi extension (Planner / Actor / Memory agents).",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types test/*.test.ts"
+  },
+  "keywords": [
+    "pi",
+    "extension",
+    "learning",
+    "memory",
+    "byte-mentor"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@earendil-works/pi-agent-core": "^0.84.2",
+    "@earendil-works/pi-ai": "^0.84.2",
+    "@earendil-works/pi-coding-agent": "^0.83.0",
+    "@earendil-works/pi-tui": "^0.84.2",
+    "@types/node": "^26.2.0",
+    "typescript": "^5.6.0"
+  }
+}
